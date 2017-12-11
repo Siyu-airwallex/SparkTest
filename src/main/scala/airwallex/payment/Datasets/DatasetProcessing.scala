@@ -1,4 +1,7 @@
 package airwallex.payment.Datasets
+import airwallex.payment.model.Transaction
+import org.apache.calcite.avatica.ColumnMetaData.StructType
+import org.apache.spark.sql.types.DoubleType
 import org.apache.spark.sql.{Encoders, SparkSession}
 
 
@@ -19,8 +22,6 @@ object DatasetProcessing {
                           .option("escape", "\"")
                           .csv("src/resources/airwallex/Payments.csv")
 
-
-    table.printSchema()
 
     table.groupBy("status").count().show()
 

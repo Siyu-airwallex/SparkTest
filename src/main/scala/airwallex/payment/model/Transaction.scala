@@ -1,6 +1,4 @@
-package airwallex.payment.Datasets
-
-import org.apache.spark.sql.types.StructField
+package airwallex.payment.model
 
 case class Transaction(paymentId: String,
                        sourceCurrency: String,
