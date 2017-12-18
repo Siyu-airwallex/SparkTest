@@ -73,6 +73,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!--Http client-->
+        <dependency>
+            <groupId>org.scalaj</groupId>
+            <artifactId>scalaj-http_${scala.version}</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+
         <!--Parsing-->
         <dependency>
             <groupId>com.github.tototoshi</groupId>

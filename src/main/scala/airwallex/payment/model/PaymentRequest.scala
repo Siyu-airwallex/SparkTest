@@ -80,9 +80,21 @@ case class BeneficiaryAddress( country_code: String,
                                postcode: String)
 
 
-case class BankAccount(
-
-                      )
+case class BankAccount( account_name: String,
+                        bank_country_code: String,
+                        bank_name: String,
+                        account_currency: String,
+                        account_number: String,
+                        account_routing_type1: String,
+                        account_routing_type2: String,
+                        account_routing_value1: String,
+                        account_routing_value2: String,
+                        bank_branch: String,
+                        bank_street_address: String,
+                        binding_mobile_number: String,
+                        iban: String,
+                        swift_code: String,
+                        status: String)
 
 
 case class BeneficiaryAdditionalInfo( business_registration_type: String,
