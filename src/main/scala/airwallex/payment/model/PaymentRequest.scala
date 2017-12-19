@@ -94,6 +94,7 @@ case class BankAccount( account_name: String,
                         binding_mobile_number: String,
                         iban: String,
                         swift_code: String,
+                        payment_method: String,
                         status: String)
 
 
