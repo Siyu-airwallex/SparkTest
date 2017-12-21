@@ -1,4 +1,4 @@
-FROM postgres
+FROM postgres:10.0
 
 ENV PGDATA /var/lib/postgresql/data/pgdata
 
