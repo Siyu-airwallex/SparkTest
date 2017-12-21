@@ -15,6 +15,26 @@ object CustomFunctions {
 
   import CommonFunctions.{routingVerify, swiftVerify, swiftRoutingVerify}
 
+
+  def fixRoutingLeadingZeros(record: BankAccount): Boolean = {
+
+    val digits = Map[String, Int]("AU" -> 6, "CA" -> 3, "GG" -> 6, "HK" -> 3, "IM" -> 6,
+                     "JE" -> 6, "SG" -> 4, "GB" -> 6, "US" -> 9)
+
+    def process(country: String , value : String) = "0" * (digits(country) - value.length) + value
+
+    val bankCountryCode = record.bank_country_code
+    var routingValue1 = record.account_routing_value1
+    var routingValue2 = record.account_routing_value2
+
+    bankCountryCode match {
+      case country @ "AU" | "GG" | "IM" | "JE" | "SG" | "GB" | "US" | "HK" => if(routingValue1.length < digits(country)) routingValue1 = process(country, routingValue1)
+      case "CA" => if(routingValue1.length < 3)
+    }
+
+    true
+  }
+
   def swiftRefLookup(record: BankAccount): Boolean = {
     val bankCountryCode = record.bank_country_code
     val accountCurrency = record.account_currency
@@ -29,6 +49,9 @@ object CustomFunctions {
       case ("AU", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
       case ("CA", _, _) => {
         val routingValue = "0" + routingValue1 + routingValue2
+        printf("CA routing_value1: %s \n", routingValue1)
+        printf("CA routing_value2: %s \n", routingValue2)
+        printf("CA routing_value: %s \n", routingValue)
         swiftRoutingVerify(swiftCode, routingValue)
       }
       case ("GG", _, "LOCAL") => routingVerify(routingValue1)
@@ -45,7 +68,6 @@ object CustomFunctions {
       case ("IM", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
       case ("JE", _, "LOCAL") => routingVerify(routingValue1)
       case ("JE", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
-      case ("MX", _, _) => routingVerify(routingValue1)
       case ("SG", _, _) => swiftRoutingVerify(swiftCode, routingValue1)
       case ("US", _, "LOCAL") => routingVerify(routingValue1)
       case ("US", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
