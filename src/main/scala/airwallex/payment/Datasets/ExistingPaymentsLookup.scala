@@ -16,23 +16,38 @@ object CustomFunctions {
   import CommonFunctions.{routingVerify, swiftVerify, swiftRoutingVerify}
 
 
-  def fixRoutingLeadingZeros(record: BankAccount): Boolean = {
+  def fixRoutingLeadingZeros(record: BankAccount): BankAccount = {
 
-    val digits = Map[String, Int]("AU" -> 6, "CA" -> 3, "GG" -> 6, "HK" -> 3, "IM" -> 6,
-                     "JE" -> 6, "SG" -> 4, "GB" -> 6, "US" -> 9)
+    val digits = Map[String, Int]("AU" -> 6, "GG" -> 6, "HK" -> 3, "IM" -> 6,"CA_1" -> 3, "CA_2" ->5,
+                     "JE" -> 6, "SG" -> 4, "US" -> 9)
 
-    def process(country: String , value : String) = "0" * (digits(country) - value.length) + value
+    def process(country: String , value : String) = {
+      println("origin value: " + value)
+      println("after value: " + "0" * (digits(country) - value.length) + value )
+      "0" * (digits(country) - value.length) + value }
 
     val bankCountryCode = record.bank_country_code
     var routingValue1 = record.account_routing_value1
     var routingValue2 = record.account_routing_value2
 
-    bankCountryCode match {
-      case country @ "AU" | "GG" | "IM" | "JE" | "SG" | "GB" | "US" | "HK" => if(routingValue1.length < digits(country)) routingValue1 = process(country, routingValue1)
-      case "CA" => if(routingValue1.length < 3)
+    try {
+      bankCountryCode match {
+        case "AU" | "GG" | "IM" | "JE" | "SG" | "GB" | "US" | "HK" => if(routingValue1.length < digits(bankCountryCode)) record.account_routing_value1 = process(bankCountryCode, routingValue1)
+        case "CA" =>  { if(routingValue1.length < 3) record.account_routing_value1 = process("CA_1", routingValue1)
+          if(routingValue2.length < 5) record.account_routing_value2 = process("CA_2", routingValue2) }
+        case _ =>
+      }
+    }catch{
+      case  npe : NullPointerException => {
+        println("bank_country_code: " + bankCountryCode)
+        println("account_routing_value1: " + routingValue1)
+        println("account_routing_value2: " + routingValue2)
+
+      }
+
     }
 
-    true
+    record
   }
 
   def swiftRefLookup(record: BankAccount): Boolean = {
@@ -46,7 +61,7 @@ object CustomFunctions {
 
     (bankCountryCode, accountCurrency, paymentMethod) match {
       case ("AU", _, "LOCAL") => routingVerify(routingValue1)
-      case ("AU", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
+      case ("AU", _, "SWIFT") => swiftVerify(swiftCode)
       case ("CA", _, _) => {
         val routingValue = "0" + routingValue1 + routingValue2
         printf("CA routing_value1: %s \n", routingValue1)
@@ -70,7 +85,7 @@ object CustomFunctions {
       case ("JE", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
       case ("SG", _, _) => swiftRoutingVerify(swiftCode, routingValue1)
       case ("US", _, "LOCAL") => routingVerify(routingValue1)
-      case ("US", _, "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
+      case ("US", _, "SWIFT") => swiftVerify(swiftCode)
       case ("GB", "GBP", "LOCAL") => routingVerify(routingValue1)
       case ("GB", "GBP", "SWIFT") => swiftRoutingVerify(swiftCode, routingValue1)
       case _ => swiftVerify(swiftCode)
@@ -124,9 +139,11 @@ object ExistingPaymentsLookup {
 
 
 
-    println(successPayments.filter(record => CustomFunctions.swiftRefLookup(record)).count())
-//    failedPayments.filter(record => CustomFunctions.swiftRefLookup(record)).count()
+    val  res = successPayments.map(tmp1 => CustomFunctions.fixRoutingLeadingZeros(tmp1))
+                            .filter(tmp2 => CustomFunctions.swiftRefLookup(tmp2)).count()
 
+
+    println(res)
 
 
   }
