@@ -7,10 +7,6 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by charlie on 18/12/17.
   */
-class ExistingPaymentsLookup {
-
-
-}
 
 object LookupType extends Enumeration{
   type LookupType = Value
@@ -122,7 +118,9 @@ object ExistingPaymentsLookup {
       .csv("src/resources/airwallex/Payments.csv")
 
 
-    val bankAccounts = table.select($"`beneficiary.bank_details.account_name`" as "account_name", // use `backticks` to escape dot
+    val bankAccounts = table.select(
+      $"short_reference_id" as "reference_id",
+      $"`beneficiary.bank_details.account_name`" as "account_name", // use `backticks` to escape dot
       $"`beneficiary.bank_details.bank_country_code`" as "bank_country_code",
       $"`beneficiary.bank_details.account_currency`" as "account_currency",
       $"`beneficiary.bank_details.account_number`" as "account_number",
@@ -149,14 +147,74 @@ object ExistingPaymentsLookup {
 
 
 
-    val  res = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
-                                  .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.SwiftRouting)
-                                      .filter(!CustomFunctions.swiftRefLookup(_))
-                                            .map(record => (record.swift_code, record.account_routing_value1, record.account_routing_value2, record.payment_method))
-                                                .show(false)
+
+    val swiftPayments = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
+      .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.SwiftOnly).persist()
+
+    val invalidSiwftPaymens = swiftPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
 
 
-    println(res)
+    val routingPayments = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
+      .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.RoutingOnly).persist()
+
+    val invalidRoutingPaymens = routingPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
+
+
+    val swiftRoutingPayments = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
+                                              .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.SwiftRouting).persist()
+
+    val invalidSiwftRoutingPaymens = swiftRoutingPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
+
+
+
+
+    printf("success swift payments number is : %d\n", swiftPayments.count())
+
+    invalidSiwftPaymens.select($"account_routing_value1", $"account_routing_value2", $"swift_code", $"payment_method")
+                              .show()
+
+    invalidSiwftPaymens.coalesce(1).write
+                                   .format("csv")
+                                   .mode("overwrite")
+                                   .option("header", "true")
+                                   .save("src/resources/result/invalidSwift.csv")
+
+
+    printf("success routing payments number is : %d\n", routingPayments.count())
+
+    invalidRoutingPaymens.select($"account_routing_value1", $"account_routing_value2", $"swift_code", $"payment_method")
+                              .show()
+
+    invalidRoutingPaymens.coalesce(1).write
+                                     .format("csv")
+                                     .mode("overwrite")
+                                     .option("header", "true")
+                                     .save("src/resources/result/invalidRouting.csv")
+
+
+
+    printf("success swift_routing payments number is : %d\n", swiftRoutingPayments.count())
+
+    invalidSiwftRoutingPaymens.select($"account_routing_value1", $"account_routing_value2", $"swift_code", $"payment_method")
+                              .show()
+
+    invalidSiwftRoutingPaymens.coalesce(1).write
+                                          .format("csv")
+                                          .mode("overwrite")
+                                          .option("header", "true")
+                                          .save("src/resources/result/invalidSwiftRouting.csv")
+
+
+    val invalidSwiftRoutingErrorSwift =  invalidSiwftRoutingPaymens.filter(row => !CommonFunctions.routingVerify(row.swift_code)).persist()
+
+
+    invalidSwiftRoutingErrorSwift.select($"account_routing_value1", $"account_routing_value2", $"swift_code", $"payment_method").show()
+
+    invalidSwiftRoutingErrorSwift.coalesce(1).write
+                                          .format("csv")
+                                          .mode("overwrite")
+                                          .option("header", "true")
+                                          .save("src/resources/result/invalidSwiftRouting.csv/swiftError.csv")
 
 
   }

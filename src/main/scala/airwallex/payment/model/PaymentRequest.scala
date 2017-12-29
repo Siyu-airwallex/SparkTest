@@ -80,7 +80,8 @@ case class BeneficiaryAddress( country_code: String,
                                postcode: String)
 
 
-case class BankAccount( account_name: String,
+case class BankAccount( reference_id: String,
+                        account_name: String,
                         bank_country_code: String,
                         bank_name: String,
                         account_currency: String,

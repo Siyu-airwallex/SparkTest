@@ -25,8 +25,6 @@ object DatasetProcessing {
 
     table.groupBy("status").count().show()
 
-//    table.filter("status is null").coalesce(1).write.csv("src/resources/airwallex/NullStatus")
-
     val transaction = table.select($"payment_id" as "paymentId",
                                    $"source_currency" as "sourceCurrency",
                                    $"payment_currency" as "paymentCurrency",
