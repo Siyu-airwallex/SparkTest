@@ -46,7 +46,7 @@ object RoutingFilesLookup {
 
   def populateBankCodeList: Array[String] = {
     import spark.implicits._
-    bankCodeDir.map(row => row.getAs[String](1) + CommonFunctions.safeString(row.getAs[String](3))).collect()
+    bankCodeDir.map(row => row.getAs[String](1) + SwiftRefEndpoint.safeString(row.getAs[String](3))).collect()
   }
 
 
@@ -65,7 +65,7 @@ object RoutingFilesLookup {
 //    populateABAList.filter(value => !CommonFunctions.routingVerify(value)).foreach(println)
 //
     println("bank_code values can not be found in database: ")
-    populateBankCodeList.filter(value => !CommonFunctions.routingVerify(value)).foreach(println)
+    populateBankCodeList.filter(value => !SwiftRefEndpoint.routingVerify(value)).foreach(println)
 
 //    import spark.implicits._
 //    bankCodeDir.map(row => (CommonFunctions.safeString(row.getString(1)),CommonFunctions.safeString(row.getString(3)))).filter(_._2 == "").show()

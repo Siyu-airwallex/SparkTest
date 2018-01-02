@@ -15,7 +15,7 @@ object LookupType extends Enumeration{
 
 object CustomFunctions {
 
-  import CommonFunctions.{routingVerify, swiftVerify, swiftRoutingVerify}
+  import SwiftRefEndpoint.{routingVerify, swiftVerify, swiftRoutingVerify}
 
 
   def fixRoutingLeadingZeros(record: BankAccount): BankAccount = {
@@ -108,7 +108,7 @@ object ExistingPaymentsLookup {
       .config("spark.debug.maxToStringFields", 100)
       .getOrCreate()
 
-    val safeString = spark.udf.register("safeString", CommonFunctions.safeString)
+    val safeString = spark.udf.register("safeString", SwiftRefEndpoint.safeString)
 
     import spark.implicits._
 
@@ -205,7 +205,7 @@ object ExistingPaymentsLookup {
                                           .save("src/resources/result/invalidSwiftRouting.csv")
 
 
-    val invalidSwiftRoutingErrorSwift =  invalidSiwftRoutingPaymens.filter(row => !CommonFunctions.routingVerify(row.swift_code)).persist()
+    val invalidSwiftRoutingErrorSwift =  invalidSiwftRoutingPaymens.filter(row => !SwiftRefEndpoint.routingVerify(row.swift_code)).persist()
 
 
     invalidSwiftRoutingErrorSwift.select($"account_routing_value1", $"account_routing_value2", $"swift_code", $"payment_method").show()

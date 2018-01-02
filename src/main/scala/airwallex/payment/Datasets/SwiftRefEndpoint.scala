@@ -4,7 +4,7 @@ import org.json4s._
 import org.json4s.jackson.JsonMethods._
 import scalaj.http.{Http, HttpResponse}
 
-object CommonFunctions {
+object SwiftRefEndpoint {
 
   val EXTERNAL_URL = "http://localhost:10080"
   val SWIFT_REF_PATH = "/api/swift_ref"
