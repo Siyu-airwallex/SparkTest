@@ -41,7 +41,7 @@ object RoutingFilesLookup {
     import spark.implicits._
     val locals = abaLocalDir.map(row => row.getAs[String](0)).collect();
     val swifts = abaSwiftDir.map(row => row.getAs[String](0)).collect();
-    locals ++ swifts.distinct
+    (locals ++ swifts).distinct
   }
 
   def populateBankCodeList: Array[String] = {
