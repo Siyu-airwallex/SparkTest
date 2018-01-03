@@ -17,39 +17,25 @@ object CustomFunctions {
 
   import SwiftRefEndpoint.{routingVerify, swiftVerify, swiftRoutingVerify}
 
-
   def fixRoutingLeadingZeros(record: BankAccount): BankAccount = {
 
     val digits = Map[String, Int]("AU" -> 6, "GG" -> 6, "GB" -> 6,  "HK" -> 3, "IM" -> 6,"CA_1" -> 3, "CA_2" ->5,
                      "JE" -> 6, "SG" -> 4, "US" -> 9)
 
-    def process(country: String , value : String) = {
-//      println("origin value: " + value)
-//      println("after value: " + "0" * (digits(country) - value.length) + value )
-      "0" * (digits(country) - value.length) + value }
+    def process(country: String , value : String) = "0" * (digits(country) - value.length) + value
 
     val bankCountryCode = record.bank_country_code
     var routingValue1 = record.account_routing_value1
     var routingValue2 = record.account_routing_value2
 
-    try {
-      bankCountryCode match {
-        case "AU" | "GG" | "IM" | "JE" | "SG" | "GB" | "US" | "HK" => if(routingValue1.length > 0 && routingValue1.length < digits(bankCountryCode))
-                                                                      record.account_routing_value1 = process(bankCountryCode, routingValue1)
-        case "CA" =>  { if(routingValue1.length > 0 && routingValue1.length < 3)
-                        record.account_routing_value1 = process("CA_1", routingValue1)
-                        if(routingValue2.length > 0 && routingValue2.length < 5)
-                        record.account_routing_value2 = process("CA_2", routingValue2) }
-        case _ =>
-      }
-    }catch{
-      case  npe : NullPointerException => {
-        println("bank_country_code: " + bankCountryCode)
-        println("account_routing_value1: " + routingValue1)
-        println("account_routing_value2: " + routingValue2)
-
-      }
-
+    bankCountryCode match {
+      case "AU" | "GG" | "IM" | "JE" | "SG" | "GB" | "US" | "HK" => if(routingValue1.length > 0 && routingValue1.length < digits(bankCountryCode))
+                                                                    record.account_routing_value1 = process(bankCountryCode, routingValue1)
+      case "CA" =>  { if(routingValue1.length > 0 && routingValue1.length < 3)
+                      record.account_routing_value1 = process("CA_1", routingValue1)
+                      if(routingValue2.length > 0 && routingValue2.length < 5)
+                      record.account_routing_value2 = process("CA_2", routingValue2) }
+      case _ =>
     }
     record
   }
@@ -117,7 +103,6 @@ object ExistingPaymentsLookup {
       .option("escape", "\"")
       .csv("src/resources/airwallex/Payments.csv")
 
-
     val bankAccounts = table.select(
       $"short_reference_id" as "reference_id",
       $"`beneficiary.bank_details.account_name`" as "account_name", // use `backticks` to escape dot
@@ -138,13 +123,11 @@ object ExistingPaymentsLookup {
       $"status")
       .as[BankAccount]
 
-
     bankAccounts.groupBy("status").count().show()
 
     val successPayments = bankAccounts.filter(record => record.status.equals("DISPATCHED")).persist()
 
     val failedPayments = bankAccounts.filter(record => record.status.equals("CANCELLED")).persist()
-
 
 
 
@@ -154,17 +137,18 @@ object ExistingPaymentsLookup {
     val invalidSiwftPaymens = swiftPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
 
 
+
     val routingPayments = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
       .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.RoutingOnly).persist()
 
     val invalidRoutingPaymens = routingPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
 
 
+
     val swiftRoutingPayments = successPayments.map(CustomFunctions.fixRoutingLeadingZeros)
                                               .filter(CustomFunctions.lookupTypeResolver(_) == LookupType.SwiftRouting).persist()
 
     val invalidSiwftRoutingPaymens = swiftRoutingPayments.filter(!CustomFunctions.swiftRefLookup(_)).persist()
-
 
 
 
@@ -215,7 +199,6 @@ object ExistingPaymentsLookup {
                                           .mode("overwrite")
                                           .option("header", "true")
                                           .save("src/resources/result/invalidSwiftRouting.csv/swiftError.csv")
-
 
   }
 }

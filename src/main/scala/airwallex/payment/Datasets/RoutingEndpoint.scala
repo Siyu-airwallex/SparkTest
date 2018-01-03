@@ -31,6 +31,7 @@ object RoutingEndpoint {
     println(abaVerify("021583153"))
     println(bsbVerify("012019"))
     println(bankCodeVerify("041","266"))
+
   }
 
 }

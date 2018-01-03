@@ -1,11 +1,7 @@
 package airwallex.payment.JDBC
 
-import java.util.Properties
-
 import airwallex.payment.Datasets.RoutingEndpoint
-import org.apache.spark
 import org.apache.spark.sql.{Encoders, SparkSession}
-
 
 object RoutingCustomFunctions {
 
@@ -22,11 +18,11 @@ object RoutingCustomFunctions {
 object JDBC2Postgres {
 
   val spark: SparkSession = SparkSession
-    .builder()
-    .appName("PostgresReverseLookup")
-    .master("local")
-    .config("spark.debug.maxToStringFields", 50)
-    .getOrCreate()
+                            .builder()
+                            .appName("PostgresReverseLookup")
+                            .master("local")
+                            .config("spark.debug.maxToStringFields", 50)
+                            .getOrCreate()
 
   val jdbcPostgres = spark.read
                           .format("jdbc")
@@ -45,9 +41,6 @@ object JDBC2Postgres {
 
   val bankCodeDirectory = spark.sql("SELECT national_id FROM bankDirectory WHERE iso_country_code='HK' ").distinct()
 
-
-
-
   def main(args: Array[String]): Unit = {
 
 //      jdbcPostgres.printSchema()
@@ -57,7 +50,6 @@ object JDBC2Postgres {
       println("Total number of bsbs in swift ref database: " + bsbDirectory.count())
 
       println("Total number of bankCodes in swift ref database: " + bankCodeDirectory.count())
-
 
       println("aba values can not be found in routing file: ")
       val abaNotFoundInRoutingFile = abaDirectory.as(Encoders.STRING).filter(!RoutingEndpoint.abaVerify(_))

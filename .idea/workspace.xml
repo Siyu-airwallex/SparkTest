@@ -2,49 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff62e81-078e-4a02-8e31-f4c01c9fa7a1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFound.csv/.part-00000-608662bc-bd40-4113-9650-0ebd0533fc9f-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFound.csv/part-00000-608662bc-bd40-4113-9650-0ebd0533fc9f-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/aba_not_found" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFound.csv/.part-00000-269f4ffb-6b15-4972-8ae5-9934a3670774-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFound.csv/part-00000-269f4ffb-6b15-4972-8ae5-9934a3670774-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bank_code_not_found" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFound.csv/.part-00000-61435873-9009-4dcc-9705-6e1569f7c8f8-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFound.csv/part-00000-61435873-9009-4dcc-9705-6e1569f7c8f8-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsb_not_found" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$main$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFound.csv/.part-00000-65c43a9a-aaba-412a-af7b-9185d08e992f-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFound.csv/part-00000-65c43a9a-aaba-412a-af7b-9185d08e992f-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFound.csv/.part-00000-caa9d575-82d8-4a06-a256-b49c25835097-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFound.csv/part-00000-caa9d575-82d8-4a06-a256-b49c25835097-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFound.csv/._SUCCESS.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFound.csv/.part-00000-2cf2b170-3d51-4aad-9319-79a39252590a-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFound.csv/_SUCCESS" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFound.csv/part-00000-2cf2b170-3d51-4aad-9319-79a39252590a-c000.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBSBList$1.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBSBList$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBSBList$2.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBSBList$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBankCodeList$1.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$$anonfun$populateBankCodeList$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/Datasets/RoutingFilesLookup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$3.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$.class" afterPath="$PROJECT_DIR$/target/classes/airwallex/payment/JDBC/JDBC2Postgres$.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/JDBC2Postgres.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/SwiftRefLookup.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/JDBC2Postgres.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/JDBC2Postgres.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,55 +22,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoutingFilesLookup.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
+      <file leaf-file-name="ExistingPaymentsLookup.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-              <folding>
-                <element signature="e#36#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDBC2Postgres.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/JDBC2Postgres.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="58" column="62" lean-forward="false" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-              <folding>
-                <element signature="e#32#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInRoutingFile.csv/part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-1333">
+              <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part-00000-c401b209-54aa-41c2-a4fe-6fb2cd951f14-c000.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-c401b209-54aa-41c2-a4fe-6fb2cd951f14-c000.csv">
+      <file leaf-file-name="SwiftRefLookup.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/SwiftRefLookup.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="1163">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <element signature="e#32#81#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv">
+      <file leaf-file-name="DatasetProcessing.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/DatasetProcessing.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="132">
+              <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -133,12 +74,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part-00000-bb874100-1076-430a-b63b-e92cd55e548b-c000.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="part-00000-bb874100-1076-430a-b63b-e92cd55e548b-c000.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-bb874100-1076-430a-b63b-e92cd55e548b-c000.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoutingEndpoint.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwiftRefEndpoint.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="702">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLQuries.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoutingFilesLookup.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding>
+                <element signature="e#36#52#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,11 +160,9 @@
         <option value="$PROJECT_DIR$/src/resources/result/bank_code_not_found" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/package.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/model/PaymentRequest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/CommonFunctions.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/DatasetProcessing.scala" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala" />
         <option value="$PROJECT_DIR$/src/resources/result/bankCodeNotFound.csv/part-00000-d89aef1a-d949-4dcb-9f62-33951ccd58cb-c000.csv" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala" />
@@ -191,6 +172,11 @@
         <option value="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv" />
         <option value="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-01a5282f-a0d0-4f9f-a148-321e3d64d18b-c000.csv" />
         <option value="$PROJECT_DIR$/src/resources/result/bsbNotFoundInRoutingFile.csv/part-00000-a27ff204-98da-4327-b3ed-85429077a698-c000.csv" />
+        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/SwiftRefLookup.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala" />
       </list>
     </option>
   </component>
@@ -208,10 +194,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1880" />
+    <option name="x" value="-1784" />
     <option name="y" value="23" />
-    <option name="width" value="1854" />
-    <option name="height" value="1050" />
+    <option name="width" value="1783" />
+    <option name="height" value="1006" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -299,13 +285,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SparkTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SparkTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -338,15 +317,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JDBC2Postgres">
-    <configuration name="DatasetProcessing" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.ExistingPaymentsLookup">
+    <configuration name="ExistingPaymentsLookup" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="airwallex.payment.Datasets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="airwallex.payment.Datasets.DatasetProcessing" />
+      <option name="MAIN_CLASS_NAME" value="airwallex.payment.Datasets.ExistingPaymentsLookup" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -355,7 +334,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SparkTest" />
+      <module name="airwallex-validation-data" />
       <envs />
     </configuration>
     <configuration name="JDBC2Postgres" type="Application" factoryName="Application" temporary="true">
@@ -528,19 +507,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DatasetProcessing" />
-      <item index="1" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RoutingEndpoint" />
-      <item index="3" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SwiftRefEndpoint" />
+      <item index="0" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RoutingEndpoint" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SwiftRefEndpoint" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ExistingPaymentsLookup" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SwiftRefEndpoint" />
-        <item index="3" class="java.lang.String" itemvalue="Application.RoutingEndpoint" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DatasetProcessing" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ExistingPaymentsLookup" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SwiftRefEndpoint" />
+        <item index="4" class="java.lang.String" itemvalue="Application.RoutingEndpoint" />
       </list>
     </recent_temporary>
   </component>
@@ -571,10 +550,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78964000" />
+    <option name="totallyTimeSpent" value="81130000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1880" y="23" width="1854" height="1050" extended-state="0" />
+    <frame x="-1784" y="23" width="1783" height="1006" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -585,12 +565,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07015526" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32386962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5352261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44900104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25358325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22530521" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17388792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -730,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/DatasetProcessing.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Properties.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Hashtable.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -841,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="212" column="33" lean-forward="false" selection-start-line="212" selection-start-column="33" selection-end-line="216" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/airwallex/bsb_directory.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-266697">
@@ -861,14 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15462">
           <caret line="859" column="34" lean-forward="false" selection-start-line="859" selection-start-column="34" selection-end-line="859" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -886,44 +843,6 @@
         <state relative-caret-position="248">
           <caret line="209" column="6" lean-forward="false" selection-start-line="209" selection-start-column="6" selection-end-line="209" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding>
-            <element signature="e#36#79#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-          <folding>
-            <element signature="e#36#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/JDBC2Postgres.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="58" column="62" lean-forward="false" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding>
-            <element signature="e#32#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,6 +890,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/DatasetProcessing.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/JDBC/SwiftRefLookup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1163">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SQLQuries.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#36#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingEndpoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1333">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding />
         </state>
       </provider>
