@@ -31,6 +31,7 @@ object RoutingFilesLookup {
 
   val bankCodeDir: DataFrame = spark.read
     .option("escape", "\"")
+    .option("header", "true")
     .csv("src/resources/airwallex/bank_code_directory.csv")
 
   def populateBSBList: Dataset[String] = {
@@ -40,19 +41,18 @@ object RoutingFilesLookup {
 
   def populateABAList: Dataset[String] = {
     import spark.implicits._
-    val locals = abaLocalDir.map(row => row.getAs[String](0))
-    val swifts = abaSwiftDir.map(row => row.getAs[String](0))
+    val locals = abaLocalDir.map(row => row.getAs[String]("Routing Number"))
+    val swifts = abaSwiftDir.map(row => row.getAs[String]("FedRoutingNR"))
     locals.union(swifts).distinct()
   }
 
   def populateBankCodeList: Dataset[String] = {
     import spark.implicits._
-    bankCodeDir.map(row => row.getAs[String](1) + SwiftRefEndpoint.safeString(row.getAs[String](3))).distinct()
+    bankCodeDir.map(row => row.getAs[String]("Clearing Code") + SwiftRefEndpoint.safeString(row.getAs[String]("Branch Code"))).distinct()
   }
 
 
   def main(args: Array[String]): Unit = {
-
 
     println("Total number of abas in routing file", populateABAList.count())
 
