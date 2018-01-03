@@ -50,36 +50,45 @@ object JDBC2Postgres {
 
   def main(args: Array[String]): Unit = {
 
-      jdbcPostgres.printSchema()
+//      jdbcPostgres.printSchema()
 
+      println("Total number of abas in swift ref database: " + abaDirectory.count())
+
+      println("Total number of bsbs in swift ref database: " + bsbDirectory.count())
+
+      println("Total number of bankCodes in swift ref database: " + bankCodeDirectory.count())
+
+
+      println("aba values can not be found in routing file: ")
       val abaNotFoundInRoutingFile = abaDirectory.as(Encoders.STRING).filter(!RoutingEndpoint.abaVerify(_))
-
       abaNotFoundInRoutingFile.coalesce(1).write
                                           .format("csv")
                                           .mode("overwrite")
                                           .option("header", "true")
-                                          .save("src/resources/result/abaNotFound.csv")
+                                          .save("src/resources/result/abaNotFoundInRoutingFile.csv")
 
+
+      println("bsb values can not be found in routing file: ")
       val bsbNotFoundInRoutingFile = bsbDirectory.as(Encoders.STRING).filter(!RoutingEndpoint.bsbVerify(_))
-
       bsbNotFoundInRoutingFile.coalesce(1).write
                                           .format("csv")
                                           .mode("overwrite")
                                           .option("header", "true")
-                                          .save("src/resources/result/bsbNotFound.csv")
+                                          .save("src/resources/result/bsbNotFoundInRoutingFile.csv")
 
+
+      println("bankCode values can not be found in routing file: ")
       import spark.implicits._
-      val bankCodeNotFoundInFile = bankCodeDirectory.as(Encoders.STRING)
+      val bankCodeNotFoundInRoutingFile = bankCodeDirectory.as(Encoders.STRING)
                                                     .filter(pair => {
                                                       val (bankCode, branchCode) = RoutingCustomFunctions.mapToRoutingPair(pair)
                                                       !RoutingEndpoint.bankCodeVerify(bankCode,branchCode)
                                                     })
-
-      bankCodeNotFoundInFile.coalesce(1).write
-                                        .format("csv")
-                                        .mode("overwrite")
-                                        .option("header", "true")
-                                        .save("src/resources/result/bankCodeNotFound.csv")
+      bankCodeNotFoundInRoutingFile.coalesce(1).write
+                                                .format("csv")
+                                                .mode("overwrite")
+                                                .option("header", "true")
+                                                .save("src/resources/result/bankCodeNotFoundInRoutingFile.csv")
 
 
   }

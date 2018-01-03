@@ -3,7 +3,8 @@ package airwallex.payment.Datasets
 import java.util
 
 import airwallex.payment.model.BankAccount
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import groovy.sql.DataSet
+import org.apache.spark.sql._
 
 object RoutingFilesLookup {
 
@@ -32,43 +33,59 @@ object RoutingFilesLookup {
     .option("escape", "\"")
     .csv("src/resources/airwallex/bank_code_directory.csv")
 
-  def populateBSBList: Array[String] = {
+  def populateBSBList: Dataset[String] = {
     import spark.implicits._
-    bsbDir.map(row => row.getAs[String](0)).map(value => value.replace("-", "")).collect()
+    bsbDir.map(row => row.getAs[String](0)).map(value => value.replace("-", "")).distinct()
   }
 
-  def populateABAList: Array[String] = {
+  def populateABAList: Dataset[String] = {
     import spark.implicits._
-    val locals = abaLocalDir.map(row => row.getAs[String](0)).collect();
-    val swifts = abaSwiftDir.map(row => row.getAs[String](0)).collect();
-    (locals ++ swifts).distinct
+    val locals = abaLocalDir.map(row => row.getAs[String](0))
+    val swifts = abaSwiftDir.map(row => row.getAs[String](0))
+    locals.union(swifts).distinct()
   }
 
-  def populateBankCodeList: Array[String] = {
+  def populateBankCodeList: Dataset[String] = {
     import spark.implicits._
-    bankCodeDir.map(row => row.getAs[String](1) + SwiftRefEndpoint.safeString(row.getAs[String](3))).collect()
+    bankCodeDir.map(row => row.getAs[String](1) + SwiftRefEndpoint.safeString(row.getAs[String](3))).distinct()
   }
 
 
   def main(args: Array[String]): Unit = {
 
-//    populateBSBList.foreach(println(_))
 
-//    populateABAList.foreach(println(_))
+    println("Total number of abas in routing file", populateABAList.count())
 
-//    populateBankCodeList.foreach(println(_))
+    println("Total number of bsbs in routing file", populateBSBList.count())
 
-//    println("bsb values can not be found in database: ")
-//    populateBSBList.filter(value => !CommonFunctions.routingVerify(value)).foreach(println)
-//
-//    println("aba values can not be found in database: ")
-//    populateABAList.filter(value => !CommonFunctions.routingVerify(value)).foreach(println)
-//
-    println("bank_code values can not be found in database: ")
-    populateBankCodeList.filter(value => !SwiftRefEndpoint.routingVerify(value)).foreach(println)
+    println("Total number of bankCodes in routing file", populateBankCodeList.count())
 
-//    import spark.implicits._
-//    bankCodeDir.map(row => (CommonFunctions.safeString(row.getString(1)),CommonFunctions.safeString(row.getString(3)))).filter(_._2 == "").show()
+
+    println("aba values can not be found in swift ref database: ")
+    val abaNotFoundInSwiftRefData = populateABAList.filter(!SwiftRefEndpoint.routingVerify(_))
+    abaNotFoundInSwiftRefData.coalesce(1).write
+                                          .format("csv")
+                                          .mode("overwrite")
+                                          .option("header", "true")
+                                          .save("src/resources/result/abaNotFoundInSwiftRef.csv")
+
+
+    println("bsb values can not be found in swift ref database: ")
+    val bsbNotFoundInSwiftRefData = populateBSBList.filter(!SwiftRefEndpoint.routingVerify(_))
+    bsbNotFoundInSwiftRefData.coalesce(1).write
+                                        .format("csv")
+                                        .mode("overwrite")
+                                        .option("header", "true")
+                                        .save("src/resources/result/bsbNotFoundInSwiftRef.csv")
+
+
+    println("bankCode values can not be found in swift ref database: ")
+    val bankCodeNotFoundInSwiftRefData = populateBankCodeList.filter(!SwiftRefEndpoint.routingVerify(_))
+    bankCodeNotFoundInSwiftRefData.coalesce(1).write
+                                              .format("csv")
+                                              .mode("overwrite")
+                                              .option("header", "true")
+                                              .save("src/resources/result/bankCodeNotFoundInSwiftRef.csv")
 
   }
 
