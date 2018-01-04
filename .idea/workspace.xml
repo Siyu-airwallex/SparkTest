@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff62e81-078e-4a02-8e31-f4c01c9fa7a1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInRoutingFile.csv/.part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInRoutingFile.csv/part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/.part-00000-1880e52c-e008-4ccc-943e-b9ed252ec2fb-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-1880e52c-e008-4ccc-943e-b9ed252ec2fb-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/.part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/.part-00000-dbeb75d0-4c18-43a9-bdd5-896db2e57037-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-dbeb75d0-4c18-43a9-bdd5-896db2e57037-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInRoutingFile.csv/.part-00000-a27ff204-98da-4327-b3ed-85429077a698-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInRoutingFile.csv/part-00000-a27ff204-98da-4327-b3ed-85429077a698-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/.part-00000-57708d74-588f-4e18-b836-0160a20c33e5-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-57708d74-588f-4e18-b836-0160a20c33e5-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFoundInSwiftRef.csv/.part-00000-6384d341-2c01-4f67-91aa-57ceeced8cec-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFoundInSwiftRef.csv/part-00000-6384d341-2c01-4f67-91aa-57ceeced8cec-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInSwiftRef.csv/.part-00000-4a992116-70a0-4025-a72c-b8a21e779050-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInSwiftRef.csv/part-00000-4a992116-70a0-4025-a72c-b8a21e779050-c000.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFoundInSwiftRef.csv/.part-00000-0f5c5319-7441-4f31-ad7d-980b3ef5c2f3-c000.csv.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFoundInSwiftRef.csv/part-00000-0f5c5319-7441-4f31-ad7d-980b3ef5c2f3-c000.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="$PROJECT_DIR$/Dockerfile" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -89,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="part-00000-83e8917f-c2d3-4078-b37a-50900992e74e-c000.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="part-00000-83e8917f-c2d3-4078-b37a-50900992e74e-c000.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/part-00000-83e8917f-c2d3-4078-b37a-50900992e74e-c000.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="468">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
@@ -214,10 +194,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2053" />
+    <option name="x" value="-141" />
     <option name="y" value="23" />
     <option name="width" value="1796" />
-    <option name="height" value="983" />
+    <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -570,15 +550,15 @@
       <workItem from="1514516591009" duration="9708000" />
       <workItem from="1514848026106" duration="16584000" />
       <workItem from="1514887884410" duration="57000" />
-      <workItem from="1515020249808" duration="4544000" />
+      <workItem from="1515020249808" duration="5790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91951000" />
+    <option name="totallyTimeSpent" value="93197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2053" y="23" width="1796" height="983" extended-state="0" />
+    <frame x="-141" y="23" width="1796" height="976" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -590,11 +570,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07015526" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53846157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25692964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53846157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42531356" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24483944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24483944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -835,14 +815,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/others/Stock.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -913,8 +885,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInRoutingFile.csv/part-00000-83e8917f-c2d3-4078-b37a-50900992e74e-c000.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
+        <state relative-caret-position="468">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding />
         </state>
       </provider>
