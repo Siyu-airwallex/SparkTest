@@ -17,7 +17,7 @@ object CustomFunctions {
 
   import SwiftRefEndpoint.{routingVerify, swiftVerify, swiftRoutingVerify}
 
-  def fixRoutingLeadingZeros(record: BankAccount): BankAccount = {
+  def fixRoutingLeadingZeros(record: BankAccount): BankAccount = {    // can move into BankAccount class
 
     val digits = Map[String, Int]("AU" -> 6, "GG" -> 6, "GB" -> 6,  "HK" -> 3, "IM" -> 6,"CA_1" -> 3, "CA_2" ->5,
                      "JE" -> 6, "SG" -> 4, "US" -> 9)
@@ -41,7 +41,7 @@ object CustomFunctions {
   }
 
 
-  def lookupTypeResolver(record: BankAccount): LookupType = (record.swift_code, record.account_routing_value1)
+  def lookupTypeResolver(record: BankAccount): LookupType = (record.swift_code, record.account_routing_value1)  // can move into BankAccount case class
     match {
       case ("", _) => LookupType.RoutingOnly
       case (_, "") => LookupType.SwiftOnly

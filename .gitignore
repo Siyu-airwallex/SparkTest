@@ -1,6 +1,2 @@
-data/
-data_dec/
-full_data/
 .idea/
-
-src/resources/data/
+postgres/*.csv
