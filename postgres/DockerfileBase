@@ -17,7 +17,7 @@ ADD ["shell/set-config.sh", "/docker-entrypoint-initdb.d/a_set-config.sh"]
 ADD ["sql/createTable.sql", "/docker-entrypoint-initdb.d/createTable.sql"]
 ADD ["sql/loadData.sql", "/docker-entrypoint-initdb.d/loadData.sql"]
 
-ADD ["swift_dec.csv", "/usr/sql/data/swift.csv"]
+ADD ["swift_1712.csv", "/usr/sql/data/swift.csv"]
 
 
 
