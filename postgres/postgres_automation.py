@@ -4,9 +4,9 @@ import os
 import shutil
 import docker.errors
 
-DEV_REPOSITORY = 'registry.airwallex.com/postgres'
-PRO_REPOSITORY = ''
-TAG = '1712'
+DEV_REPOSITORY = 'registry.airwallex.com/validation-reference-data'
+PRO_REPOSITORY = 'p-registry.airwallex.com/validation-reference-data'
+TAG = '201712'
 
 BASE_IMAGE = 'postgres_base:' + TAG
 BASE_CONTAINER = 'postgres_base'
@@ -67,7 +67,7 @@ os.system('docker tag ' + PERSIST_IMAGE + ' ' + DEV_IMAGE)
 #     client.images.remove(PRO_IMAGE, force=True)
 # except docker.errors.ImageNotFound:
 #     pass
-#os.system('docker tag ' + PERSIST_IMAGE + ' ' + PRO_IMAGE)
+# os.system('docker tag ' + PERSIST_IMAGE + ' ' + PRO_IMAGE)
 
 client.images.push(repository= DEV_IMAGE)
 
