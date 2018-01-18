@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff62e81-078e-4a02-8e31-f4c01c9fa7a1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefLoadRandomCheck.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/airwallex/payment/model/BankRecord.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgres/shell/docker-healthcheck.sh" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/.part-00000-c51a5db2-8f4b-42bb-9eec-5c3a9199a68c-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-c51a5db2-8f4b-42bb-9eec-5c3a9199a68c-c000.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/.part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/.part-00000-a7e93ef9-90c4-42ac-a383-f819cf29c43a-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-a7e93ef9-90c4-42ac-a383-f819cf29c43a-c000.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFoundInRoutingFile.csv/.part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/abaNotFoundInRoutingFile.csv/part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInRoutingFile.csv/.part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInRoutingFile.csv/part-00000-de10b435-0f69-424e-98a0-2d16f64f5836-c000.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFoundInRoutingFile.csv/.part-00000-a27ff204-98da-4327-b3ed-85429077a698-c000.csv.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/result/bsbNotFoundInRoutingFile.csv/part-00000-a27ff204-98da-4327-b3ed-85429077a698-c000.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgres/postgres_automation.py" afterPath="$PROJECT_DIR$/postgres/postgres_automation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postgres/DockerfilePersist" afterPath="$PROJECT_DIR$/postgres/DockerfilePersist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInSwiftRef.csv/part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv" afterPath="$PROJECT_DIR$/target/classes/result/bankCodeNotFoundInSwiftRef.csv/part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,18 +46,8 @@
       <file leaf-file-name="ExistingPaymentsLookup.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="103" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PaymentRequest.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/model/PaymentRequest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1476">
-              <caret line="82" column="11" lean-forward="false" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
+            <state relative-caret-position="1080">
+              <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -64,48 +66,58 @@
       <file leaf-file-name="DockerfileBase" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postgres/DockerfileBase">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="450">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgresql.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/postgres/postgresql.conf">
+      <file leaf-file-name="DockerfilePersist" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/postgres/DockerfilePersist">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="191" column="24" lean-forward="false" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postgres_automation.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="docker-healthcheck.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/postgres/shell/docker-healthcheck.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="86" lean-forward="true" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NATIONALIDFORMAT.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/postgres/NATIONALIDFORMAT.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="set-config.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/postgres/shell/set-config.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postgres_automation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postgres/postgres_automation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankRecord.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/model/BankRecord.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwiftRefLoadRandomCheck.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefLoadRandomCheck.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="54">
+              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -114,18 +126,18 @@
       <file leaf-file-name="RoutingFilesLookup.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1206">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="1404">
+              <caret line="82" column="93" lean-forward="false" selection-start-line="82" selection-start-column="93" selection-end-line="82" selection-end-column="93" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DockerfilePersist" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/postgres/DockerfilePersist">
+      <file leaf-file-name="SwiftRefEndpoint.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -193,6 +205,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/model/BankRecord.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefLoadRandomCheck.scala" />
         <option value="$PROJECT_DIR$/postgres/postgres_automation.py" />
+        <option value="$PROJECT_DIR$/postgres/shell/docker-healthcheck.sh" />
+        <option value="$PROJECT_DIR$/postgres/DockerfilePersist" />
       </list>
     </option>
   </component>
@@ -221,10 +235,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1614" />
-    <option name="y" value="72" />
-    <option name="width" value="1683" />
-    <option name="height" value="982" />
+    <option name="x" value="-1920" />
+    <option name="y" value="121" />
+    <option name="width" value="1577" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -259,7 +272,8 @@
             <path>
               <item name="SparkTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="SparkTest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="postgres" type="462c0819:PsiDirectoryNode" />
+              <item name="shell" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -267,6 +281,7 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JDBC2Postgres">
+  <component name="RunManager" selected="Application.RoutingFilesLookup">
     <configuration name="ExistingPaymentsLookup" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -491,8 +506,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RoutingFilesLookup" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JDBC2Postgres" />
         <item index="2" class="java.lang.String" itemvalue="Application.ExistingPaymentsLookup" />
         <item index="3" class="java.lang.String" itemvalue="Application.SwiftRefEndpoint" />
         <item index="4" class="java.lang.String" itemvalue="Application.RoutingEndpoint" />
@@ -531,15 +546,18 @@
       <workItem from="1515647602290" duration="3291000" />
       <workItem from="1515710499238" duration="9456000" />
       <workItem from="1515976388051" duration="2377000" />
-      <workItem from="1516056507885" duration="2856000" />
+      <workItem from="1516056507885" duration="2978000" />
+      <workItem from="1516149362174" duration="3673000" />
+      <workItem from="1516230606192" duration="8648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123232000" />
+    <option name="totallyTimeSpent" value="135675000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1614" y="72" width="1683" height="982" extended-state="0" />
+    <frame x="-1920" y="121" width="1577" height="980" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,21 +566,21 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.225058" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.072961375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53846157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.078688525" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751982" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32247192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3966292" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1594114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18557377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24983607" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39578456" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39578456" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -621,7 +639,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-8d89ac35-18ae-4b68-b0cf-3b53ceab7970-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-6384d341-2c01-4f67-91aa-57ceeced8cec-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-0f5c5319-7441-4f31-ad7d-980b3ef5c2f3-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-4a992116-70a0-4025-a72c-b8a21e779050-c000.csv" />
@@ -651,20 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInRoutingFile.csv/part-00000-1ac0b54d-b6ec-4b71-b338-0cbb4589cdb2-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/main/java/others/Stock.java" />
-    <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-c51a5db2-8f4b-42bb-9eec-5c3a9199a68c-c000.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="817" column="9" lean-forward="false" selection-start-line="817" selection-start-column="9" selection-end-line="817" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/result/bankCodeNotFoundInSwiftRef.csv/part-00000-b55d9388-89f6-4c0a-bc6e-e04c25b95ac2-c000.csv" />
+    <entry file="file://$PROJECT_DIR$/src/resources/result/abaNotFoundInSwiftRef.csv/part-00000-c51a5db2-8f4b-42bb-9eec-5c3a9199a68c-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/resources/result/bsbNotFoundInRoutingFile.csv/part-00000-ed5b9f33-4e55-41ed-b0aa-6b467eeb2322-c000.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -672,13 +677,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-a7e93ef9-90c4-42ac-a383-f819cf29c43a-c000.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resources/result/bsbNotFoundInSwiftRef.csv/part-00000-a7e93ef9-90c4-42ac-a383-f819cf29c43a-c000.csv" />
     <entry file="file://$PROJECT_DIR$/src/resources/airwallex/Payments.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -711,13 +710,6 @@
     <entry file="file://$PROJECT_DIR$/scriptFile.scala" />
     <entry file="file://$PROJECT_DIR$/postgres/postgresql9.conf" />
     <entry file="file://$PROJECT_DIR$/postgres/postgresql10.conf" />
-    <entry file="file://$PROJECT_DIR$/postgres/shell/set-config.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/postgres/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/postgres/sql/clear_table.sql" />
     <entry file="file://$PROJECT_DIR$/postgres/sql/initial.sql" />
@@ -733,13 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgres/NATIONALIDFORMAT.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -771,13 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/DatasetProcessing.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -796,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="54" column="98" lean-forward="false" selection-start-line="54" selection-start-column="98" selection-end-line="54" selection-end-column="98" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,14 +781,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/postgres/DockerfilePersist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,34 +799,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/model/Transaction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/model/BankRecord.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1206">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="103" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -872,24 +817,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/postgres/postgresql.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="3438">
           <caret line="191" column="24" lean-forward="false" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/postgres/DockerfileBase">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/model/Transaction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="36">
+          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/SwiftRefEndpoint.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/RoutingFilesLookup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="82" column="93" lean-forward="false" selection-start-line="82" selection-start-column="93" selection-end-line="82" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/airwallex/payment/Datasets/ExistingPaymentsLookup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/postgres/postgres_automation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="54">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/shell/set-config.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/NATIONALIDFORMAT.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/DockerfileBase">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/shell/docker-healthcheck.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="86" lean-forward="true" selection-start-line="10" selection-start-column="86" selection-end-line="10" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/postgres/DockerfilePersist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
