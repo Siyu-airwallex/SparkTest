@@ -6,7 +6,7 @@ import docker.errors
 
 DEV_REPOSITORY = 'registry.airwallex.com/validation-reference-data'
 PRO_REPOSITORY = 'p-registry.airwallex.com/validation-reference-data'
-TAG = '201712'
+TAG = '201801'
 
 BASE_IMAGE = 'postgres_base:' + TAG
 BASE_CONTAINER = 'postgres_base'
