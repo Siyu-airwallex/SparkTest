@@ -34,6 +34,26 @@ object Practice {
     tmp
   }
 
+  def fibonacci1(n : Int) : Int = {
+    var a = 0;
+    var b = 1
+    var count = n
+    while (count > 1) {
+      val tmp = b
+      b = a + b
+      a = tmp
+      count = count - 1
+    }
+    b
+  }
+
+  def fibonacci2(n : Int, a : Int, b : Int) : Int= {
+    if(n == 0) return a
+    fibonacci2(n-1, b, a+b )
+  }
+
+
+
   def mergeSort(list : List[Int]) : List[Int] = {
     def merge(left : List[Int], right : List[Int]) : List[Int] = (left, right) match {
       case (Nil, res@(x :: _) ) => res
@@ -69,5 +89,8 @@ object Test{
 
 
     println(Practice.mergeSort(List(14,2)))
+
+    println(Practice.fibonacci1(8))
+    println(Practice.fibonacci2(8, 0 ,1))
   }
 }
